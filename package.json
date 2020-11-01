@@ -4,7 +4,7 @@
   "description": "Deep Consulting Solutions Assignment Task1",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "node app.js",
     "test": "mocha tests.js"
   },
   "author": "Bhargav Patel",
