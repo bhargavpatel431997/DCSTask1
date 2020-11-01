@@ -7,6 +7,9 @@
 ## Deployed Link
 https://dcstask1.herokuapp.com/
 
+## Documentation
+Please check <a href="https://github.com/bhargavpatel431997/DCSTask1/blob/master/Docs/Docs.pdf">Docs/Docs.pdf</a>
+
 ## Test Description
 Test app with the different scenario.<br>
 Run App: `npm start`<br>
@@ -45,10 +48,6 @@ Run Tests: `npm test`
 
 ### Passed All Test Cases
 <img src="https://github.com/bhargavpatel431997/DCSTask1/blob/master/Docs/Five%20Test%20passed.png"/>
-
-
-## Documentation
-Please check <a href="https://github.com/bhargavpatel431997/DCSTask1/blob/master/Docs/Docs.pdf">Docs/Docs.pdf</a>
 
 ## Logging
 Added internal debug level logs for the application.
