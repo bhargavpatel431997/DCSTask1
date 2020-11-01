@@ -9,7 +9,8 @@ https://dcstask1.herokuapp.com/
 
 ## Test Description
 Test app with the different scenario.<br>
-Run tests: `mocha tests.js`
+Run App: `npm start`<br>
+Run Tests: `npm test`
 
 ### Test 1: Valid request value
 
