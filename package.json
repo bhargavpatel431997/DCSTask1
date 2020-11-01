@@ -1,0 +1,20 @@
+{
+  "name": "visitors",
+  "version": "1.0.0",
+  "description": "Deep Consulting Solutions Assignment Task1",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "mocha tests.js"
+  },
+  "author": "Bhargav Patel",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http-errors": "^1.7.3",
+    "log4js": "^6.3.0",
+    "supertest": "^6.0.0"
+  },
+  "engines": {
+    "node":"v10.6.0"
+  }
+}
