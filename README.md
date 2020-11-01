@@ -48,3 +48,7 @@ Run tests: `mocha tests.js`
 
 ## Documentation
 Please check <a href="https://github.com/bhargavpatel431997/DCSTask1/blob/master/Docs/Docs.pdf">Docs/Docs.pdf</a>
+
+## Logging
+Added internal debug level logs for the application.
+<img src="https://github.com/bhargavpatel431997/DCSTask1/blob/master/Docs/Debug%20Level%20Log.png"/>
