@@ -25,7 +25,7 @@ logger({
 // e.g., vistior count before 3600 seconds ~ 1 hour will not be considered into latest visitors count
 const interval = process.env.DEFAULT_INTERVAL || config.DEFAULT_INTERVAL || 1 * 60 * 60;
 
-app.set('interval',  interval);
+app.set('interval', interval);
 
 logger({
   fileName,
