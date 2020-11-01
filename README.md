@@ -12,10 +12,11 @@ Test app with the different scenario.<br>
 Run tests: `mocha tests.js`
 
 ### Test 1: Valid request value
-`POST /metric/active_visitors`<br>
-`REQUEST: {'value':120.33}`<br>
+
+`POST /metric/active_visitors` <br>
+`REQUEST:  {'value':120.33}` <br>
 `RESPONSE: {}`<br>
-`STATUS: 200`<br>
+`STATUS: 200` <br>
 
 ### Test 2: Invalid request value
 `POST /metric/active_visitors`<br>
