@@ -8,6 +8,7 @@
 https://dcstask1.herokuapp.com/
 
 ## Test Description
+This is to test the app with the different scenario.
 Run tests: `mocha tests.js`
 
 ### Test 1: Valid request value
@@ -40,6 +41,8 @@ Run tests: `mocha tests.js`
 `RESPONSE: { "value" : 0 }`<br>
 `STATUS: 200`<br>
 
+### Passed All Test Cases
+<img src="https://github.com/bhargavpatel431997/DCSTask1/blob/master/Docs/Five%20Test%20passed.png"/>
 
 
 ## Documentation
