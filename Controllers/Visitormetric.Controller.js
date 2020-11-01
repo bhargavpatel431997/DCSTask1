@@ -34,16 +34,18 @@ const manageCache = async function (cache, interval, value, key, currentTime = n
 
 module.exports = {
   createOrUpdateMetric: async (req, res, next) => {
-    /* 
-      REQUEST: URL:  localhost/metric/{KEY} 
-               BODY: {value:34.33}
-      RESPONSE: e.g., SUCCESS => {} 
-                   OR ERROR => {"error": {"status": 400,"message": "Invalid value passed."}} 
-    */
+    /**
+     * @api {post} /metric/:KEY Request to create or update current visitor counts for the dynamic KEY|Path.
+     * @apiName createOrUpdateMetric
+     * @apiGroup Visitormetric
+     * @apiParam {String} KEY dynamic path param.
+     * @apiParam {Number} value request body field to update visitor counts.
+     * @apiSuccess {Object} object blank object response i.e, {}.
+     * @apiError {Object} object status code 400 if wrong data passed e.g., {error:{status:400, message:"Invalid value passed."}}
+     */
+
     const methodName = "createOrUpdateMetric";
     var logMsg = "";
-
-    // http://localhost/metric/{KEY}
     const key = req.params.key;
     logMsg = "In comming request to add visitor count for the Path: " + key;
     logger({ fileName, methodName, logMsg });
@@ -108,12 +110,15 @@ module.exports = {
   },
 
   getMetricSumByKey: async (req, res, next) => {
-    /* 
-      REQUEST:  URL:  localhost/metric/{KEY}/sum
-                BODY: {}
-      RESPONSE: SUCCESS => {value:40} 
-            OR  ERROR => {"error": {"status": 400,"message": "Invalid value passed."}} 
-    */
+    /**
+     * @api {get} /metric/:KEY/sum Request to get latest visitor counts for the dynamic KEY|Path.
+     * @apiName getMetricSumByKey
+     * @apiGroup Visitormetric
+     * @apiParam {String} KEY dynamic path param.
+     * @apiSuccess {Object} Object Response object e.g., {value : 10} for the given KEY|Path.
+     * @apiError {Object} Object status code 404 if wrong KEY|Path requested.
+     */
+
     const methodName = "getMetricSumByKey";
     var logMsg = "";
 

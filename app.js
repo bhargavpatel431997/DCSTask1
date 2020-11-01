@@ -12,6 +12,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/metric', VisitorMetricRoute);
 
+const nodeApiDocGenerator = require('node-api-doc-generator');
+nodeApiDocGenerator(app,"localhost",process.env.PORT||3000);
 
 //In memory Cache object
 app.set('cache', {});
@@ -23,8 +25,8 @@ logger({
 });
 
 // Interval in seconds to filter:
-// e.g., vistior count before 7200 seconds which is 2 hours will not be considered into count
-const interval = process.env.DEFAULT_INTERVAL || config.DEFAULT_INTERVAL || 2 * 60 * 60;
+// e.g., vistior count before 3600 seconds which is 1 hours will not be considered into count
+const interval = process.env.DEFAULT_INTERVAL || config.DEFAULT_INTERVAL || 1 * 60 * 60;
 
 app.set('interval',  interval);
 
