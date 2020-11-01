@@ -12,9 +12,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/metric', VisitorMetricRoute);
 
-const nodeApiDocGenerator = require('node-api-doc-generator');
-nodeApiDocGenerator(app,"localhost",process.env.PORT||3000);
-
 //In memory Cache object
 app.set('cache', {});
 
