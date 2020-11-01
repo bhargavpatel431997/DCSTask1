@@ -8,7 +8,7 @@
 https://dcstask1.herokuapp.com/
 
 ## Test Description
-This is to test the app with the different scenario.
+Test app with the different scenario.<br>
 Run tests: `mocha tests.js`
 
 ### Test 1: Valid request value
