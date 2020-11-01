@@ -4,10 +4,8 @@
 `npm install`<br>
 `npm install -g mocha`
 
-## Run tests
-`mocha tests.js`
-
 ## Test Description
+Run tests: `mocha tests.js`
 ### test 1: 
 `POST /metric/active_visitors`<br>
 `REQUEST: {'value':120.33}`<br>
@@ -32,7 +30,7 @@
 `RESPONSE: { "error": { "status": 404, "message": "Invalid key." } }`<br>
 `STATUS: 404`<br>
 
-### test 5: (Test after Interval)
+### test 5: Test after 10 seconds Interval (This interval is 1 hour in production but 10 seconds for the test)
 `GET /metric/active_visitors/sum`<br>
 `REQUEST: {}`<br>
 `RESPONSE: { "value" : 0 }`<br>
