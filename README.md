@@ -5,7 +5,7 @@
 `npm install -g mocha`
 
 ## Deployed Link
-https://dcstask1.herokuapp.com/
+(Disabled) https://dcstask1.herokuapp.com/
 
 ## Documentation
 Please check <a href="https://github.com/bhargavpatel431997/DCSTask1/blob/master/Docs/Docs.pdf">Docs/Docs.pdf</a>
